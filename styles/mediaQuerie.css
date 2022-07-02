@@ -1,7 +1,4 @@
 @media screen and (max-width: 960px) {
-    #first {
-        background-attachment: local;
-    }
     header {
         background-color: #363636;
     }
@@ -96,6 +93,9 @@
 }
 
 @media screen and (max-width: 810px) {
+    #first {
+        background-attachment: scroll;
+    }
     #practiceAreas {
         grid-template-columns: 1fr 1fr;
         padding: 20px 0;
