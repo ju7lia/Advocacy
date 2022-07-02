@@ -1,6 +1,6 @@
 @media screen and (max-width: 960px) {
     #first {
-        background-image: url(../media/background2_p.jpg);
+        background-attachment: local;
     }
     header {
         background-color: #363636;
