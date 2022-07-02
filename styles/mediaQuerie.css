@@ -1,0 +1,159 @@
+@media screen and (max-width: 960px) {
+    #first {
+        background-image: url(../media/background2_p.jpg);
+    }
+    header {
+        background-color: #363636;
+    }
+    .menu {
+        display: flex;
+        flex-direction: column;
+        justify-content: baseline;
+        align-items: center;
+        position: absolute;
+        width: 100%;
+        height: 0vh;
+        top: 80px;
+        right: 0;
+        overflow-y: hidden;
+        margin: 0;
+        padding-top: 20vh;
+        visibility: hidden; 
+        transition: 0.5s;
+        z-index: 10000;
+    }
+    nav.active .menu {
+        background-color: #363636;
+        height: 100%;
+        visibility: visible;
+    }
+    .menu li {
+        margin-bottom: 30px;
+    }
+
+    #btn_mobile {
+        display: flex;
+        margin: 10px;
+        padding: .5rem 1rem;
+        font-size: 1rem;
+        cursor: pointer;
+        border: none;
+        background-color: transparent;
+        gap: .5rem;
+    }
+    #hamburguer {
+        width: 20px;
+        border-top: 2.2px solid #8f8989;
+        filter: invert(20%);
+    }
+    #hamburguer::after,
+    #hamburguer::before {
+        position: relative;
+        content: '';
+        margin-top: 5px;
+        display: block;
+        height: 2px;
+        width: 20px;
+        background-color: #8f8989;
+        transition: .3s all;
+    }
+    nav.active #hamburguer {
+        border-top-color: transparent;
+    }
+    nav.active #hamburguer::after {
+        transform: rotate(135deg);
+    }
+    nav.active #hamburguer::before {
+        transform: rotate(-135deg);
+        top: 7px;
+    }
+
+    #features {
+        position: static;
+        flex-direction: column;
+        max-width: 800px;
+        justify-content: center;
+        margin: 0 auto;
+    }
+    #lead {
+
+        margin: 200px;
+    }
+    .box {
+        max-width: 800px;
+        margin: 10px;
+    }
+    #second {
+        flex-direction: column;
+        padding: 100px 50px;
+    }
+    #imgLawyer {
+        margin-top: 150px;
+        margin-bottom: 50px;
+        margin-left: 50%;
+        margin-right: 50%;
+    }
+}
+
+@media screen and (max-width: 810px) {
+    #practiceAreas {
+        grid-template-columns: 1fr 1fr;
+        padding: 20px 0;
+    }
+    #lead {
+        margin: 200px auto;
+    }
+}
+@media screen and (max-width: 590px) {
+    #practiceAreas {
+        grid-template-columns: 1fr;
+    }
+    footer {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}
+@media screen and (max-width: 540px) {
+    #lead {
+        padding-top: 20vh;
+        margin: 150px 30px;
+    }
+    #lead h1 {
+        font-size: 20px;
+    }
+    #lead h2{
+        font-size: 30px;
+    }
+    #imgLawyer {
+        display: none;
+    }
+    #about {
+        text-align: center;
+        margin-top: 50px;
+    }
+    #about h2 {
+        border: none;
+        margin-bottom: 40px;
+    }
+    #third h2 {
+        text-align: center;
+        border: none;
+    }
+    #phones {
+        display: none;
+    }
+    footer {
+        grid-template-columns: 1fr ;
+    }
+    .copy {
+        left: 35px;
+    }
+    .onePart{
+        margin: 20px auto;
+    }
+    .twoPart {
+        margin: 20px auto;
+        padding-bottom: 50px;
+    }
+
+}
